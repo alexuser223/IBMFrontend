@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.ocean-level {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#level1 {
+    background: linear-gradient(to bottom, #00bfff, #0073e6);
+}
+
+#level2 {
+    background: linear-gradient(to bottom, #0073e6, #0059b3);
+}
+
+#level3 {
+    background: linear-gradient(to bottom, #0059b3, #003d80);
+}
+
+#level4 {
+    background: linear-gradient(to bottom, #003d80, #00264d);
+}
+
+.twinkle {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle-animation 1.5s infinite ease-in-out;
+}
+
+@keyframes twinkle-animation {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
