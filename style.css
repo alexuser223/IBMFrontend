@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body, html {
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ body, html {
 }
 
 #level1 {
+    overflow: hidden;
     background: linear-gradient(to bottom, #00bfff, #0073e6);
 }
 
@@ -39,6 +41,7 @@ body, html {
     opacity: 0;
     animation: twinkle-animation 1.5s infinite ease-in-out;
 }
+
 
 @keyframes twinkle-animation {
     0%, 100% { opacity: 0; }
@@ -215,4 +218,81 @@ body, html {
     .navbar-container input[type="checkbox"]:checked ~ .logo{
         display: none;
     }
+    .twinkle {
+        width: 2px;
+        height: 2px;
+    }
+    :root{
+        font-size: 10px;
+    }
+
 }
+
+/* Hero Section */
+.hero-container {
+    font-family: "Poppins", sans-serif;
+    margin-top: 64px;
+    background: linear-gradient(to right, #5DE0E6, #004aad);
+    width: 100%;
+    height: calc(100vh - 64px); 
+    overflow: hidden;
+  }
+  
+  #hero-para {
+    position: relative;
+    top: 58px;
+    left: 76px;
+    width: 400px;
+    font-weight: 400;
+    font-size: 1.12rem;
+
+  }
+  ::-webkit-scrollbar {
+    display: none;
+}
+  #hero-title {
+    position: relative;
+    top: 4px;
+    left: 70px;
+    line-height: 4rem;
+    font-size: 3.5rem;
+
+  }
+  /*Float animation*/
+  @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-20px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+  #hero-img{
+   position: relative;
+   bottom: 420px;
+   animation: float 6s ease-in-out infinite;
+  }
+  @media (max-width: 500px){
+    #hero-img{
+  bottom: 135px;
+    }
+  }
+  #scroll{
+    position: absolute;
+    top:520px;
+    right: 45px;
+    width: 4%;
+  }
+  #iceberg-lower{
+    z-index: 1;
+    position: relative;
+    top: -87px;
+    left: 392px;
+    animation: float 6s ease-in-out infinite;
+
+  }
