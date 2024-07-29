@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body, html {
+    
     margin: 0;
     padding: 0;
     height: 100%;
@@ -17,6 +18,7 @@ body, html {
 
 #level1 {
     overflow: hidden;
+    height: 320vh;
     background: linear-gradient(to bottom, #00bfff, #0073e6);
 }
 
@@ -294,5 +296,225 @@ body, html {
     top: -87px;
     left: 392px;
     animation: float 6s ease-in-out infinite;
-
   }
+
+  /*Junaid CSS*/
+
+  .dolphineImage{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    animation: wave-animation 2s ease-in-out infinite;
+
+}
+.SunlightZone{
+    font-family: "Poppins", sans-serif;
+
+  z-index: 2;
+  margin-left: 50px;
+  margin-top: -675px;
+}
+.dol{
+    position: absolute;
+    top: 8px;
+    left: 1px;
+}
+.SunlightZoneDefine{
+    height: 200px;
+    width: 30%;
+    margin-left: 20px;
+}
+.TurtleImage{
+    height: 200px;
+    width: 30%;
+    margin-left: 20px;
+    align-items: center;
+}
+.TurtleImage img{
+    padding-left: 50px;
+    rotate: -15deg;
+    animation: wave-animation 2s ease-in-out infinite;
+}
+.TurtleSideText{
+    width: 20%;
+    position: absolute;
+    left: 25vw;
+    top: 75vh;
+    display: inline;
+    z-index: 8;
+}
+.TurtleBottomText{
+    width: 20%;
+    height: 150px;
+    margin-left: 20px;
+}
+.Turtle{
+    display: inline-flex;
+    width: 100%;
+}
+.PolytheneBurg{
+    position: absolute;
+    right: 150px;
+    top: -350px;
+}
+.overfishing{
+    position: absolute;
+    left: 30px;
+}
+.sustainfishing{
+    position: absolute;
+    right: 300px;
+}
+.YesNo{
+    height: 300px;
+    position: relative;
+}
+.overfishingText{
+    display: none;
+    position: absolute;
+    left: 300px;
+    width: 20%;
+    
+}
+.sustainfishingText{
+    display: none;
+    position: absolute;
+    right: 20px;
+    width: 20%;
+}
+.beforeAfter{
+    height: 300px;
+}
+#majOverFiah{
+  display: inline;
+  animation: wave-animation 2s ease-in-out infinite;
+
+}
+#majOverNet{
+  display: inline;
+  animation: wave-animation 2s ease-in-out infinite;
+
+}
+#majOverOil{
+  display: inline;
+  animation: wave-animation 2s ease-in-out infinite;
+
+}
+.majorThreats{
+    position: relative;
+  display: flex;
+  justify-content: center;
+}
+.majorThreats img{
+    rotate: -6deg;
+    border: 4px solid white;
+    border-radius: 10px;
+    position: relative;
+    margin-right: -20px;
+    left: -20px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+}
+.CommitToConserText{
+    font-family: "Poppins", sans-serif;
+    width: 55%;
+    margin-left: 40px;
+
+}
+.CommitToConserText>ol>li>h4{
+    margin: 15px 2px;
+}
+.CommitToConserText>ol>li{
+    margin: -4px -5px;
+   line-height: 25px;
+}
+.icebergText{
+    position: absolute;
+    right: 20px;
+    font-size: 23px;
+    top: 100px;
+    height: auto;
+    width: 20%;
+    z-index: 4;
+}
+.thre{
+    margin-left: 30px;
+}
+.image-container {
+    position: relative;
+  }
+
+  
+  .image-text {
+    position: absolute;
+    padding: 2px 5px;
+    border-radius: 5px;
+    bottom: 0;
+    color: #00274d;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7decf198;
+    rotate: -6deg;
+    margin-bottom: 65px;
+    font-weight: 800;
+  }
+  #narwhal{
+    -webkit-transform: scaleX(-1);
+    position: absolute;
+    width: 440px;
+    right: 30px;
+    border: 3.3px solid white;
+    border-radius: 15px;
+    top:1550px;
+  }
+
+  #donation-button {
+    background-color: #3498db; /* blue color */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff; /* white color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #donation-button:hover {
+    background-color: #2980b9; /* darker blue color */
+  }
+  
+  /* Add some sea-themed styles */
+  #donation-button {
+    background-size: 100% 100%;
+    border: 2px solid #ffffff; /* white border */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add some depth */
+  }
+  
+  #donation-button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* add more depth on hover */
+  }
+    
+  @keyframes wave-animation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  #donation-button {
+    animation: wave-animation 2s ease-in-out infinite;
+  }
+
+#donation-button{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
