@@ -6,7 +6,8 @@ body, html {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
-    font-family: "Oswald", sans-serif;
+    /* font-family: "Oswald", sans-serif; */
+    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -18,12 +19,14 @@ body, html {
 
 #level1 {
     overflow: hidden;
-    height: 320vh;
+    /* height: 320vh; */
+    height:auto;
     background: linear-gradient(to bottom, #00bfff, #0073e6);
 }
 
 #level2 {
     background: linear-gradient(to bottom, #0073e6, #0059b3);
+    padding-top: 30px;
 }
 
 #level3 {
@@ -283,6 +286,8 @@ body, html {
     #hero-img{
   bottom: 135px;
     }
+
+
   }
   #scroll{
     position: absolute;
@@ -429,6 +434,7 @@ body, html {
 .CommitToConserText>ol>li{
     margin: -4px -5px;
    line-height: 25px;
+   color: white;
 }
 .icebergText{
     position: absolute;
@@ -471,19 +477,22 @@ body, html {
   }
 
   #donation-button {
-    background-color: #3498db; /* blue color */
+    background-color: #2835c5; 
+    /* background-color: #e79e21;  */
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     color: #ffffff; /* white color */
     cursor: pointer;
+    height: 80px;
+    width: 300px;
     transition: background-color 0.3s ease;
   }
   
   #donation-button:hover {
-    background-color: #2980b9; /* darker blue color */
+    background-color: #0088ff; /* darker blue color */
   }
   
   /* Add some sea-themed styles */
@@ -518,3 +527,103 @@ body, html {
     margin-right: auto;
     display: block;
 }
+
+/* Twilight Zone */
+
+#Twilight-gb{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    
+    
+}
+
+#Twilight-video{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    mix-blend-mode:soft-light;
+}
+#Twilight-container{
+    
+    z-index: 6;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    
+  p{
+    width: 25%;
+
+    span{
+        font-size: larger;
+        font-weight: 600;
+    }
+  }
+}
+
+#JoinGroup{
+
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: #2daaf3;
+    color: white;
+    
+    button{
+        color: rgb(234, 248, 48);
+        font-size: 24px;
+        font-weight: 600;
+        background: #0285d2;
+        border: none;
+        padding: 3px;
+        cursor: pointer;
+    }
+
+    button:hover{
+        scale: 105%;
+    }
+    h3{
+        font-size: 32px;
+    }
+
+}
+
+#joinImageDiv{
+    padding: 50px;
+}
+
+#joinimage{
+    height: 300px;
+}
+
+
+@media (max-width: 768px){
+    
+    #JoinGroup{
+        flex-direction: column;
+        font-size:small
+
+    }
+
+    #Twilight-container{
+        padding-left: 5%;
+        padding-right: 5%;
+        p{
+            width: 100%;
+            font-size:small
+        
+        }
+    
+  }}
