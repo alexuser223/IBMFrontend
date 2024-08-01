@@ -18,6 +18,7 @@ body, html {
 }
 
 #level1 {
+    margin-top: -40px;
     overflow: hidden;
     /* height: 320vh; */
     height:auto;
@@ -25,16 +26,30 @@ body, html {
 }
 
 #level2 {
+    overflow: hidden;
     background: linear-gradient(to bottom, #0073e6, #0059b3);
     padding-top: 30px;
 }
 
 #level3 {
+    height: fit-content;
+    margin-bottom: 1px;
     background: linear-gradient(to bottom, #0059b3, #003d80);
 }
 
 #level4 {
+    margin-top: -1px;
+    padding-top: 10px;
+    padding-left: 50px;
     background: linear-gradient(to bottom, #003d80, #00264d);
+}
+#level5{
+   background: linear-gradient(to bottom, #00264d, #001429);
+   height: 300vh;
+}
+#level6{
+    background: linear-gradient(to bottom, #001429, #000000);  
+    height: 200vh;
 }
 
 .twinkle {
@@ -218,7 +233,7 @@ body, html {
     }
 
 }
-
+/*      RESPONSIVE   NAVBAR       */
 @media (max-width: 500px){
     .navbar-container input[type="checkbox"]:checked ~ .logo{
         display: none;
@@ -239,7 +254,7 @@ body, html {
     margin-top: 64px;
     background: linear-gradient(to right, #5DE0E6, #004aad);
     width: 100%;
-    height: calc(100vh - 64px); 
+    height:700px; 
     overflow: hidden;
   }
   
@@ -279,12 +294,31 @@ body, html {
 }
   #hero-img{
    position: relative;
-   bottom: 420px;
+   top: -412px;
    animation: float 6s ease-in-out infinite;
   }
   @media (max-width: 500px){
+    #hero-container{ 
+        padding: 20px;
+    }
+    #hero-para{
+        left: 30px;
+        font-size: 16px;
+        width: 50%;
+        top:108px
+    }
+    #hero-title{
+    
+        top: 158px;
+        left: 30px;
+    }
+    
+
     #hero-img{
-  bottom: 135px;
+        position: relative;
+        top: 170px;
+        left: 0;
+        width: 500px;
     }
 
 
@@ -306,7 +340,6 @@ body, html {
   /*Junaid CSS*/
 
   .dolphineImage{
-    width: 100%;
     position: absolute;
     top: 10px;
     left: 30px;
@@ -354,43 +387,22 @@ body, html {
     height: 150px;
     margin-left: 20px;
 }
-.Turtle{
-    display: inline-flex;
-    width: 100%;
-}
-.PolytheneBurg{
-    position: absolute;
-    right: 150px;
-    top: -350px;
-}
-.overfishing{
-    position: absolute;
-    left: 30px;
-}
-.sustainfishing{
-    position: absolute;
-    right: 300px;
-}
-.YesNo{
-    height: 300px;
-    position: relative;
-}
-.overfishingText{
-    display: none;
-    position: absolute;
-    left: 300px;
-    width: 20%;
+@media (max-width: 500px){
+    .dolphineImage>img{
+        position: relative;
+        width: 200px;
+        top: -10px;
+        left: 20px;
+    }
+    #iceberg-lower{
+        top:-20px;
+        left: 135px;
+        width: 230px;
+        margin-bottom: 600px;
+    }
     
 }
-.sustainfishingText{
-    display: none;
-    position: absolute;
-    right: 20px;
-    width: 20%;
-}
-.beforeAfter{
-    height: 300px;
-}
+
 #majOverFiah{
   display: inline;
   animation: wave-animation 2s ease-in-out infinite;
@@ -561,8 +573,8 @@ body, html {
     
     
   p{
-    width: 25%;
-
+    width: 65%;
+    font-size: 16px;
     span{
         font-size: larger;
         font-weight: 600;
@@ -571,23 +583,35 @@ body, html {
 }
 
 #JoinGroup{
-
-    
+    z-index: 2;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-left: 5%;
     padding-right: 5%;
-    background: #2daaf3;
+    background: transparent;
     color: white;
     
+    .line{
+    text-decoration: underline;
+    }
+    p{
+        width: 60%;
+    }
+    img{
+        margin: 20px;
+        z-index: 4px;
+        border: 4px solid black;
+    }
     button{
         color: rgb(234, 248, 48);
+        border-radius: 5px;
         font-size: 24px;
         font-weight: 600;
         background: #0285d2;
         border: none;
-        padding: 3px;
+        padding: 5px 8px;
+        transition: .5s;
         cursor: pointer;
     }
 
@@ -596,6 +620,7 @@ body, html {
     }
     h3{
         font-size: 32px;
+        line-height: 16px;
     }
 
 }
@@ -627,3 +652,479 @@ body, html {
         }
     
   }}
+
+
+  /*Midnight ZONE*/
+  #level4>h4{
+    text-decoration: underline;
+    color: #007fff;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+#level4>p{
+    color: white;
+    width: 52%;
+    text-align: center;
+}
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box-back>h2{
+    color: black;
+    text-decoration: underline;
+    font-size: 25px;
+}
+.flip-box-back>p{
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.flip-box {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  #tripod{
+    position: absolute;
+    top: 150px;
+    right: 150px;
+  }
+  #vSquid{
+    position: absolute;
+    top: 220px;
+    right: 415px;
+  }
+  #glow{
+    animation:  glow-bio 5s infinite;
+  }
+  @keyframes glow-bio {
+    0%{
+        text-shadow: 0px 0px 0px yellow;
+        
+    }
+    50%{
+        text-shadow: 0px 0px 10px yellow;
+        
+    }
+    100%{
+        text-shadow: 0px 0px 0px yellow;
+    }
+  }
+
+  /*Abyss From Aman*/
+  #home {
+    width: 100%;
+    /* height: 150%; */
+    background: linear-gradient(180deg, #0f0d46, #0b082e, #05041a);
+    color: white;
+    position: relative;
+}
+
+#level5 {
+    /* height: 100%; */
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 0vw 5vw;
+}
+
+/* description */
+
+#description{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    padding: 2vw 0;
+    width: 100%;
+    /* border: 2px solid pink; */
+}
+
+#description p{
+    margin-top: 10px;
+}
+
+.sub-desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+
+.line-under{
+    width: 0.2vw;
+    background: white;
+}
+#line1{
+    height: 0vw;
+}
+#line2{
+    height: 0vw;
+}
+#intro{
+    h1{
+        font-size: 36px;
+    }
+    p{
+        font-size: 19px;
+    }
+}
+#thr-head{
+    margin-left: -200px;
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 19px;
+    }
+}
+#thr-desc{
+    h3{
+        font-size: 27px;
+    }
+    p{
+        font-size: 19px;
+    }
+}
+.sub-desc-head{
+    width: 25%;
+    align-self: flex-start;
+}
+
+.sub-desc-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 50%;
+}
+
+.thr-desc-span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thr-desc{
+    display: flex;
+    flex-direction: column;
+    gap: .1vw;
+}
+/* abyss ceature */
+#abyss-creture {
+    height: 80vh;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    position: relative;
+    margin-bottom: -490px;
+}
+
+.creature-img-para {
+    background:dodgerblue;
+    height: 52%;
+    width: 18%;
+    position: absolute;
+    left: 40%;
+    top: 15%;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 2s all ease-in-out;
+
+}
+
+.c-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: top;
+}
+
+.c-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.c-para {
+    font-size: 1vw;
+    position: absolute;
+    bottom: -70%;
+    left: 0;
+    padding: 1.2vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+
+    transition: 1s all ease-in-out;
+    h1{
+        font-size: 20px;
+    }
+}
+
+.creature-img-para:hover .c-para {
+    bottom: 0%;
+    transition: 1s all ease-in-out;
+}
+
+#c-img-para1 {
+    transform: rotate(325deg);
+    margin-right:30px;
+}
+
+#c-img-para2 {
+    transform: rotate(335deg);
+    margin-right:30px;
+}
+
+#c-img-para3 {
+    transform: rotate(345deg);
+    margin-right:30px;
+}
+
+#c-img-para4 {
+    transform: rotate(0deg);
+        margin-right:30px;
+}
+
+/* abyss tshirt */
+#abyss-tshirt {
+    height: 48%;
+    width: 100%;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* border: 2px solid tomato; */
+}
+
+#shop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200%;
+    gap: 1vw;
+    color: white;
+    /* border: 3px solid yellow; */
+    h2{
+        font-size: 20px;
+    }
+}
+
+.tshirt-img-para {
+    height: 20vw;
+    width: 20vw;
+    background-color: #cacae387;
+    position: relative;
+    overflow: hidden;
+}
+
+.tshirt-img-para img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: top center;
+}
+i{
+    font-size: 14px;
+    color: rgb(255, 251, 0);
+}
+.t-para {
+    width: 100%;
+    line-height: .1;
+    position: absolute;
+    bottom: -18%;
+    left: 0;
+    background-color: rgb(23 28 82 / 58%);
+    padding: 0.5vw;
+    transition: .5s all ease-out;
+    font-weight: 600;
+}
+
+.t-para h2 {
+    margin-bottom: 0.5vw;
+}
+
+.tshirt-img-para:hover .t-para {
+    bottom: 0;
+    transition: 1s all ease-out;
+}
+
+.demo {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+}
+
+#about-tshirt {
+    color: white;
+    padding: 2vw 0px;
+    width: 55%;
+    margin-left: -650px;
+    margin-bottom: -500px;
+}
+
+#about-tshirt h2 {
+    font-size: 2.5vw;
+}
+
+#t-para{
+    font-size: 20px;
+}
+#t-img-para9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#t-img-para9 h3{
+    background-color: rgba(0, 255, 255, 0.499);
+    cursor: pointer;
+    font-size: 2.5vw;
+    padding: 1vw 2vw;
+    text-wrap: nowrap;
+}
+
+#t-img-para9 h3:hover{
+    background-color: rgba(0, 255, 255, 0.663);
+    transition: all .2s ease-in;
+}
+
+#t-img-para9{
+    height: fit-content;
+    width: fit-content;
+}
+.floor{
+    margin-top: -550px;
+    font-family: "Poppins", sans-serif;
+    height: 170vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .text-floor>p{
+    width: 400px;
+    color: white;
+
+    font-size: 1.0rem;
+  }
+  .text-floor>h2{
+    color: white;
+    font-size: 2.5rem;
+  }
+  .text-floor{
+    margin-top: 140px;
+    margin-right: 50px;
+    text-align: center;
+    float: right;
+  }
+  #deepseadragonn {
+    p{
+        font-size: 16px;
+    }
+    position: absolute;
+    top: 380px;
+    left: 127px;
+    width: 300px;
+    z-index: 1;
+}
+  #seaStar {
+    position: absolute;
+    top: 545px;
+    left: 445px;
+    z-index: 10;
+    width: 300px;
+}
+#bloodBelly {
+    position: absolute;
+    top: 163px;
+    left: 345px;
+}
+  #oceanFloor{
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0px;
+    clip-path: inset(0 0 35px 0); /*cropping for the footer*/
+  }
+  #deepseadragonn{
+    width: 300px;
+    height: 300px;
+    background: url("/images/deepseadragonn.webp");
+    background-size: contain;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+.text {
+    width: 100%;
+    background: linear-gradient(34deg, #0026ff, #00fff8, #00c9f8, #007cf8);
+    position: relative;
+    bottom: -50px;
+    opacity: 0;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.5s;
+}
+.card:hover .text{
+    opacity: 1;
+    bottom: 0px;
+    background-color: #ffffffbd;
+}
+#glassOctopus{
+    position: absolute;
+    top: 600px;
+    right: 400px;
+  }
+  #dumboOCt{
+    position: absolute;
+    top: 600px;
+    right: 800px;
+  }
+  #seaAngel{
+    position: absolute;
+    top: 600px;
+    right: 1200px;
+  }

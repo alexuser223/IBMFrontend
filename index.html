@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ocean Depth Scroll</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+       <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -47,8 +61,6 @@
           <img
             src="images/pexels-kammeran-gonzalez-keola-3137381-17823425-removebg-preview.png"
             alt="Shark Image"
-            width="450"
-            height="auto"
           />
         </div>
         <div class="icebergText">
@@ -169,53 +181,496 @@
       </div>
     </div>
     <div class="ocean-level" id="level2">
-
       <!-- Twilight Zone Start -->
-       
-       <div id="Twilight-gb">
-        
 
-        <video id="Twilight-video"  muted autoplay loop src="videos/Jellyfish.mp4">Video is not Supported by your Browser</video>
+      <div id="Twilight-gb">
+        <video
+          id="Twilight-video"
+          muted
+          autoplay
+          loop
+          src="videos/Jellyfish.mp4"
+        >
+          ideo is not supported by your browser
+        </video>
         <div id="Twilight-container">
+          <h3 style="font-size: 2em">Twilight Zone</h3>
 
-          <h3 style="font-size: 2em;">Twilight Zone</h3>
+          <p style="width: 50%">
+            The twilight zone can be found 200 to 1,000 meters below the ocean
+            surface, at the point where the sun's rays can no longer reach. But
+            , it's full of life including fish, crustaceans, jellyfish, squids
+            and worms. Occasionally, there are bursts of
+            <span style="color: yellow; font-weight: 600">bioluminescence</span>
+            , when living creatures give off their natural glows.
+          </p>
 
-          <p style="width: 50%;">The twilight zone can be found 200 to 1,000 meters below the ocean surface, at the point where the sun's rays can no longer reach. But , it's full of life including fish, crustaceans, jellyfish, squids and worms. Occasionally, there are bursts of <span style="color: yellow;font-weight: 600;">bioluminescence</span> , when living creatures give off their natural glows.</p>
+          <p>
+            <span>Why It needs your support ?</span><br />
+            It make up more than 90% of all fish in the sea, according to the
+            Blue Marine Foundation. Since some countries like Norway and Japan
+            already started large scale removal of these fishes it is crucial to
+            take fast action.
+          </p>
 
-          <p ><span>Why It needs your support ?</span><br> 
-            It make up more than 90% of all fish in the sea, according to the Blue Marine Foundation. Since some countries like Norway and Japan already started large scale removal of these fishes it is crucial to take fast action.</p>
-
-            
-
-          <p><span>What you can do ?</span><br>
-            This zone most threatened by overfishing and pollution demands awareness against the degrading schemes of the industries and thus requires public involvement You can be a part of us by  joining a local group 👇</p>
-
+          <p>
+            <span>What you can do ?</span><br />
+            This zone most threatened by overfishing and pollution demands
+            awareness against the degrading schemes of the industries and thus
+            requires public involvement You can be a part of us by joining a
+            <strong>local group 👇</strong>
+          </p>
         </div>
-       </div>
-
+      </div>
 
       <!-- Twilight Zone End -->
-
-
     </div>
 
-  
-    
-    <div class="ocean-level" id="level3">  
+    <div class="ocean-level" id="level3">
       <div id="JoinGroup">
-      <div>
-        <h3>Join a local group!</h3>
-        <p>Whatever your availability, your desires, your skills, you can join our teams of activists on the ground. Local groups, made up of volunteers, actively participate in relaying SEA’s campaigns and missions in their region</p>
-        <button>LEARN MORE ></button>
+        <div>
+          <h3>Join a <span class="line">local group</span>!</h3>
+          <p>
+            Whatever your availability, your desires, your skills, you can join
+            our teams of activists on the ground. Local groups, made up of
+            volunteers, actively participate in relaying SEA’s campaigns and
+            missions in their region
+          </p>
+          <button>LEARN MORE ></button>
+        </div>
+        <div class="joinImageDiv">
+          <img id="joinimage" src="images/localgc.jpg" alt="" />
+        </div>
       </div>
-      <div class="joinImageDiv">
-
-        <img id="joinimage" src="images/group.jpg" alt="">
-
-      </div>
-     </div>
     </div>
-    <div class="ocean-level" id="level4">hello4</div>
+    <div class="ocean-level" id="level4">
+      <h4>Midnight Zone</h4>
+      <p>
+        The midnight zone stretches from 1,000 meters to 4,000 meters below the
+        ocean's surface. This region is shrouded in perpetual darkness, as
+        sunlight cannot penetrate these depths. From
+        <span id="glow">bioluminescent</span> creatures that light up the
+        darkness to giant squids that roam the deep, the midnight zone is a
+        world of wonders waiting to be discovered.
+      </p>
+      <p>
+        This zone if full of microbes which play an extensive role in the carbon
+        cycle and eventual deep-sea carbon storage, thus understanding their
+        activity is an essential step toward addressing climate change.
+      </p>
+      <div id="tripod" class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img
+              src="images/tripodFish.gif"
+              style="width: 250px; height: 250px"
+            />
+          </div>
+          <div class="flip-box-back">
+            <h2>Tripod Fish</h2>
+            <p>
+              This rainbow coloured fish uses his beautiful fins to book surf
+              the water and attract mates.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="vSquid" class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img
+              src="images/vampireSquid.gif"
+              style="width: 250px; height: 250px"
+            />
+          </div>
+          <div class="flip-box-back">
+            <h2>Vampire Squid</h2>
+            <p>
+              It is no bloodsucker — it only eats dead organic material. It's
+              the only living cephalopod species that doesn't eat live prey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div id="home">
+        <div class="ocean-level" id="level5">
+          <div id="description">
+            <div id="intro">
+              <h1>Abyss Zone</h1>
+              <p>
+                The abyssal zone, extending from about 3,000 to 6,000 meters below
+                sea level, is one of the most remote and least explored regions of
+                the ocean.
+              </p>
+            </div>
+            <div id="threats" class="sub-desc">
+              <div id="thr-head" class="sub-desc-head">
+                <h2>Challenges & Threats</h2>
+                <p>
+                  Despite its remoteness, this zone faces significant
+                  environmental challenges and threats, primarily due to human
+                  activities. Two of the most pressing issues are deep-sea mining
+                  and pollution.
+                </p>
+              </div>
+              <div class="line" id="line1"></div>
+              <div id="thr-description" class="sub-desc-description">
+                <div id="thr-desc1" class="thr-desc">
+                  <h3>Deep-Sea Mining : Environmental Impact</h3>
+                  <ul class="thr-desc-span">
+                    <li>Habitat Destruction</li>
+                    <li>Biodiversity Loss</li>
+                    <li>Sediment Plumes</li>
+                  </ul>
+                </div>
+                <div id="thr-desc2" class="thr-desc">
+                  <h3>Pollution : Sources and Effects</h3>
+                  <ul class="thr-desc-span">
+                    <li>Plastic Pollution</li>
+                    <li>Chemical Contaminants</li>
+                    <li>Oil and Gas Extraction</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <!-- <div id="abyss-creture">
+          <div id="creature">
+            <div class="creature-img-para" id="c-img-para1">
+              <img src="./images/1jelly.jpg" alt="" id="c-img1" class="c-img" />
+              <div id="c-para1" class="c-para">
+                <h1>Deep Sea Jelly Fish</h1>
+                <p>
+                  These found throughout the abyssopelagic zone, these jellyfish
+                  can survive and thrive at depths from 4,000 to 6,000 meters.
+                </p>
+              </div>
+            </div>
+            <div class="creature-img-para" id="c-img-para2">
+              <img
+                src="./images/2cucumber.jpg"
+                alt=""
+                id="c-img2"
+                class="c-img"
+              />
+              <div id="c-para2" class="c-para">
+                <h1>Deep Sea Cucumber</h1>
+                <p>
+                  These benthic creatures are found crawling along the ocean
+                  floor at depths ranging from 4,000 to 6,000 meters, feeding on
+                  detritus.
+                </p>
+              </div>
+            </div>
+            <div class="creature-img-para" id="c-img-para3">
+              <img src="./images/3star.jpg" alt="" id="c-img3" class="c-img" />
+              <div id="c-para3" class="c-para">
+                <h1>Basket Stars</h1>
+                <p>
+                  These types of brittle star, these echinoderms are found on
+                  the seafloor at depths between 4,000 and 6,000 meters.
+                </p>
+              </div>
+            </div>
+            <div class="creature-img-para" id="c-img-para4">
+              <img
+                src="./images/4tubeworm.jpg"
+                alt=""
+                id="c-img4"
+                class="c-img"
+              />
+              <div id="c-para4" class="c-para">
+                <h1>Giant Tube Worms</h1>
+                <p>
+                  These often found near hydrothermal vents, these organisms can
+                  be found at depths around 4,000 meters.
+                </p>
+              </div>
+            </div>
+            <div class="creature-img-para" id="c-img-para5">
+              <img
+                src="./images/octopus.jpg"
+                alt=""
+                id="c-img5"
+                class="c-img"
+              />
+              <div id="c-para5" class="c-para">
+                <h1>Telescope Octopus</h1>
+                <p>
+                  These often found near hydrothermal vents, these organisms can
+                  be found at depths around 4,000 meters.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+           <div class="hadalCreatures">
+            <div id="glassOctopus" class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    src="images/glassOctopus.gif"
+                    style="width: 250px; height: 250px"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <h2>Glass Octopus</h2>
+                  <p>
+                    It is no bloodsucker — it only eats dead organic material. It's
+                    the only living cephalopod species that doesn't eat live prey.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="dumboOCt" class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    src="images/dumboOCt.gif"
+                    style="width: 250px; height: 250px"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <h2>Dumbo Octopus</h2>
+                  <p>
+                    It is no bloodsucker — it only eats dead organic material. It's
+                    the only living cephalopod species that doesn't eat live prey.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="seaAngel" class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img
+                    src="images/seaAngel.gif"
+                    style="width: 250px; height: 250px"
+                  />
+                </div>
+                <div class="flip-box-back">
+                  <h2>Sea Angel</h2>
+                  <p>
+                    It is no bloodsucker — it only eats dead organic material. It's
+                    the only living cephalopod species that doesn't eat live prey.
+                  </p>
+                </div>
+              </div>
+            </div>
+           </div>
+        <div id="abyss-tshirt">
+            <div id="about-tshirt">
+              <h2>Merchandise</h2>
+              <p>
+                The SEA merchandise collection was created for one reason: to
+                continue to build our movement against ocean plastic pollution and
+                provide our supporters with another way to contribute to our
+                mission. When you purchase an item from any of our partners below,
+                a donation will be made in support of The SEA.
+              </p>
+            </div>
+            <div id="shop">
+              <div class="tshirt-img-para" id="t-img-para1">
+                <img
+                  src="./images/tshirt1-removebg-preview.png"
+                  alt=""
+                  id="t-img1"
+                  class="t-img"
+                />
+                <div id="t-para1" class="t-para">
+                  <h2>The Waste Shirt</h2>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>₹ 550</p>
+                </div>
+              </div>
+              <div class="tshirt-img-para" id="t-img-para2">
+                <img
+                  src="./images/tshirt2-removebg-preview.png"
+                  alt=""
+                  id="t-img2"
+                  class="t-img"
+                />
+                <div id="t-para2" class="t-para">
+                  <h2>T-Shirt 2023</h2>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>₹ 350</p>
+                </div>
+              </div>
+              <div class="tshirt-img-para" id="t-img-para3">
+                <img
+                  src="./images/tshirt3-removebg-preview.png"
+                  alt=""
+                  id="t-img3"
+                  class="t-img"
+                />
+                <div id="t-para3" class="t-para">
+                  <h2>WhaleFamily T-Shirt</h2>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star-half-stroke"></i>
+                  </p>
+                  <p>₹ 500</p>
+                </div>
+              </div>
+              <div class="tshirt-img-para" id="t-img-para4">
+                <img
+                  src="./images/tshirt4-removebg-preview.png"
+                  alt=""
+                  id="t-img4"
+                  class="t-img"
+                />
+                <div id="t-para4" class="t-para">
+                  <h2>Ocean T-Shirt</h2>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>₹ 400</p>
+                </div>
+              </div>
+              <div class="tshirt-img-para" id="t-img-para5">
+                <img
+                  src="./images/tshirt5-removebg-preview.png"
+                  alt=""
+                  id="t-img5"
+                  class="t-img"
+                />
+                <div id="t-para5" class="t-para">
+                  <h2>Whales Full-Sleeve</h2>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star-half-stroke"></i>
+                  </p>
+                  <p>₹ 450</p>
+                </div>
+              </div>
+              <div class="tshirt-img-para" id="t-img-para6">
+                <img
+                  src="./images/tshirt6-removebg-preview.png"
+                  alt=""
+                  id="t-img6"
+                  class="t-img"
+                />
+                <div id="t-para6" class="t-para">
+                  <h2>006 Hoodie</h2>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>₹ 350</p>
+                </div>
+              </div>
+              <div class="tshirt-img-para" id="t-img-para7">
+                <img
+                  src="./images/tshirt7-removebg-preview.png"
+                  alt=""
+                  id="t-img7"
+                  class="t-img"
+                />
+                <div id="t-para7" class="t-para">
+                  <h2>Ocean Cleanup Logo Shirt</h2>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i>
+                  </p>
+                  <p>₹ 550</p>
+                </div>
+              </div>
+              <div class="tshirt-img-para" id="t-img-para8">
+                <img
+                  src="./images/tshirt8-removebg-preview.png"
+                  alt=""
+                  id="t-img8"
+                  class="t-img"
+                />
+                <div id="t-para8" class="t-para">
+                  <h2>The Waves T-Shirt</h2>
+                  <p>
+                    <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star-half-stroke"></i>
+                  </p>
+                  <p>₹ 600</p>
+                </div>
+              </div>
+              <div class="tshirt-img-para" id="t-img-para9">
+                <h3>
+                  Shop More<i
+                    style="font-size: 30px; color: white; padding: 2px 5px"
+                    class="fa-solid fa-shopping-cart"
+                  ></i>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     
+
+      <div class="floor" id="level6">
+        <div class="text-floor">
+          <h2>Ocean Floor</h2>
+          <p>
+            The water pressure here is 1,086 bar. Taking a swim here is like
+            having to balance 1,800 elephants on top of you. But even here, life
+            has found a way to thrive. Next to sea cucumbers, white and light pink
+            amphipods wiggle their way through the water.
+            <br /><br /><br /><br />
+            And there are other things floating elegantly through the water.
+            <br /><br /><br />
+            Plastic bags that were found by scientists in 2018.
+          </p>
+          <img id="bag-floor" width="100px" src="images/plastic.gif" />
+        </div>
+        <div id="deepseadragonn" class="card">
+          <div class="text">Deep Sea Dragon <p>It utilises the light on his head to attract prey.</p></div>
+        </div>
+        <img id="seaStar" src="images/seaStar.jpg" alt="seaStar" />
+        <video
+          id="bloodBelly"
+          width="653px"
+          loop
+          autoplay
+          src="/images/bloodBelly.mp4"
+        ></video>
+        <img
+          style="position: absolute; top: 530px; right: 200px"
+          width="100px"
+          src="images/shrimpLOL.png"
+        />
+        <img id="oceanFloor" src="images/oceanFloor.png" />
+      </div>
+
+    </div>
     <script src="script.js"></script>
+ 
   </body>
 </html>
