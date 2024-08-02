@@ -1079,12 +1079,12 @@ i{
     top: 163px;
     left: 345px;
 }
-  #oceanFloor{
+  #oceanFloor{ 
     position: absolute;
     display: block;
     width: 100%;
     bottom: 0px;
-    clip-path: inset(0 0 35px 0); /*cropping for the footer*/
+    clip-path: inset(0 0 0px 0); /*cropping for the footer*/
   }
   #deepseadragonn{
     width: 300px;
@@ -1128,3 +1128,277 @@ i{
     top: 600px;
     right: 1200px;
   }
+
+  /*Donation Button*/
+  .donate {
+    border-radius: 15px;
+    background-color: dodgerblue;
+    width: 500px;
+    color: #FFF;
+  }
+  
+  .donate p {
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .donate h3 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+  
+  .denomination {
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 13px 0;
+    cursor: pointer;
+    background-color: dodgerblue;
+    margin: 0 1px 1px 0;
+    transition: background-color 0.2s ease;
+  }
+  
+  .denomination label {
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .denomination input {
+    left: -10001px;
+    position: absolute;
+  }
+  
+  .denomination-other {
+    width: 99.8%;
+  }
+  
+  .denomination-other input {
+    position: relative;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    width: inherit;
+    text-align: center;
+    background-color: dodgerblue;
+    border: none;
+    padding: 13px 0;
+    transition: background-color 0.2s ease;
+  }
+  
+  .denomination-other input:hover {
+    background-color: #0000ff;
+  }
+  
+  .denomination-other input:before {
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    content: '$';
+  }
+  
+  .donate-amount .selected,
+  .denomination-other input.selected,
+  .donate-amount .denomination:hover {
+    background-color: #0000ff;
+    border: 0;
+  }
+  
+  .donate-black h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #FFF;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .donate-black h2 span {
+    display: block;
+    float: left;
+    font-size: 16px;
+    padding-top: 7px;
+    margin-right: 20px;
+    text-align: center;
+    width: 30px;
+    height: 25px;
+    background-color: #0000ff;
+    border-radius: 50%;
+  }
+  
+  .donate-type label,
+  .donate-payment label {
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 30px;
+  }
+  
+  .donate-blue {
+    background-color: #00000057;
+    padding: 20px;
+  }
+  
+  .donate-black {
+    padding: 20px;
+  }
+  
+  .donate-submit button {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    background-color: #0000ff;
+    border: none;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 0;
+    margin: 30px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .donate-submit small {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 13px;
+  }
+  
+  ::placeholder {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  *::-webkit-input-placeholder {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  *:-moz-placeholder {
+    color: #FFF;
+    font-weight: 300;
+  }
+  
+  *::-moz-placeholder {
+    color: #FFF;
+    font-weight: 300;
+  }
+  
+  *:-ms-input-placeholder {
+    font-weight: 300;
+    color: #FFF;
+  }
+  
+  *:focus {
+    outline: none;
+  }
+  .donate-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer {
+    background-color: #24282e; /* Match your website's color scheme */
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .footer div{
+    display: inline-block;
+  }
+  .footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  strong{
+    font-family: "Poppins", sans-serif;
+  }
+  .Wbutton {
+    font-family: "Poppins", sans-serif;
+    z-index: 2;
+    position: absolute;
+    top: 900px;
+    left: 300px;
+    background-color: #cbf3f0;
+    border-radius: 50px;
+    color: #11534d;
+    border: 3px solid #2ec4b6;
+    line-height: 1;
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 20px 25px;
+    font-family: "Bungee";
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    min-width: 200px;
+    text-align: center;
+  }
+  .Wbutton:hover,
+  .Wbutton:focus {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+  
+  @-webkit-keyframes wobble {
+    16.65% {
+      -webkit-transform: translateX(8px);
+      transform: translateX(8px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  @keyframes wobble {
+    16.65% {
+      -webkit-transform: translateX(8px);
+      transform: translateX(8px);
+    }
+    33.3% {
+      -webkit-transform: translateX(-6px);
+      transform: translateX(-6px);
+    }
+    49.95% {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px);
+    }
+    66.6% {
+      -webkit-transform: translateX(-2px);
+      transform: translateX(-2px);
+    }
+    83.25% {
+      -webkit-transform: translateX(1px);
+      transform: translateX(1px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
